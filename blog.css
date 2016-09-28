@@ -1,0 +1,67 @@
+
+/*
+the structure of a rule:
+
+	[selector] {
+	  [property]: [value];
+	}
+
+	The selector is our way of telling the browser which HTML elements we want the rule to affect.
+	Through the properties we tell the browser how we want to modify the appearance of the selected elements. 
+*/
+
+body {
+  background-color: grey;
+  font-family: "Baskerville";
+}
+
+p {
+  background-color: blue;
+  font-family: "Baskerville";
+}
+
+header {	
+	color: purple;
+	font-size: 28px;
+}
+
+footer {
+	color: orange;
+}
+
+/* Class selectors ".clase": let us apply different rules to elements with the same tag name. Notice the period "." before the class name.
+ That's what tells the browser that this is a class selector.*/
+.niceParagraph {
+  background-color: red;
+  font-family: "Baskerville";
+}
+
+/*Id selectors "#.id": Some times we want our style to be affected just to a single element of the page. 
+In that case we use a id selector for the style. Instead of a period we use a hash # sign.*/
+#finalParagraph {
+  background-color: green;
+  font-family: "Baskerville";
+}
+
+/*Multiple selectors: A rule can actually have multiple selectors separated by commas. 
+You can use this feature to apply the same styles to multiple kinds of elements.*/
+.niceParagraph, span {
+  background-color: grey;
+  font-family: "Baskerville";
+}
+
+/* Finally, you can also select elements based on their relationship to other elements. 
+Normally you use this to select elements that are inside other elements*/
+footer p {
+  background-color: black;
+}
+
+/* Color values:
+
+black    rgb(  0,   0,   0)      #000000
+olive    rgb(128, 128,   0)      #888800
+blue     rgb(  0,   0, 255)      #0000FF
+
+Fonts: http://www.cssfontstack.com/Web-Fonts
+
+*/
