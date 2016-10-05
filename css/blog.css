@@ -1,0 +1,293 @@
+/* elementos dentro del body */
+
+body {
+	width: 100%
+	height:100%;
+	font-size: 18px;
+	margin: 0%;
+	padding: 0px;
+	background-color: white;
+}
+
+/* CABECERA*/
+
+nav div {
+
+	/* elemento flotante a la izquierda */
+	float: left;
+	/* ocupa el 18% del ancho */
+	width: 18%;
+	height: 100%;
+	background-color: white;
+	margin: 0%;
+	padding: 0px;	
+	border: 0px solid black;
+	text-align: center;
+	/* lo usamos para que la imagen se posicione */
+	position: relative;
+
+}
+
+nav div img {
+	
+	/* se posiciona vs el padre con position relative*/
+	position: absolute;
+	/* posicionamiento de la imagen vs el padre*/
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+nav ul {
+
+	/* elemento flotante posicionado a la derecha */
+	float: right;
+	/* ocupa el 50% de la pantalla */
+	width: 50%;
+	/* ocupa el 100% de la altura del padre*/
+	height: 100%;
+	/*eliminamos los caracteres de la lista */
+	list-style: none;
+	margin: 0%;
+	background-color: white;
+	border: 0px solid black;
+	padding: 0px;
+
+}
+
+nav {
+	/* eliminamos el flotante */ 
+	overflow: hidden;	
+	background-color: white;
+	margin: 1% 1% 0% 1%;
+	padding: 0px;
+	height: 80px;
+	font-size: 18px;
+}
+
+nav ul li {
+
+	/* elementos de la lista flotantes a la izquierda */
+  	float: left;
+	width: 25%;
+	height: 100%;
+	/* centrado vertical elementos */
+	position: relative;
+	
+}
+
+nav ul li a {
+
+	/* centrado vertical elementos*/
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 50%;
+	height: 20px;
+	margin: auto;
+	text-decoration: none; 
+	/* centrado horizontal cabecera*/
+	text-align: center;
+
+}
+
+nav ul {
+	/* eliminamos el flotante */
+	overflow: hidden;
+}
+
+
+
+
+
+/* -- HEADER -- */
+
+header {
+
+	background-color: #2C3E51;
+	margin: 0% 1% 1% 1%;
+	padding: 0px;
+	height: 450px;
+	font-size: 40px;
+	text-align: center;	
+	
+}
+
+header div#cabecera_parte1 {
+	
+	margin: 0%;
+	padding: 0px;
+	width: 100%;
+	height: 40%;
+	position: relative;
+}
+
+header div#prueba {
+
+	margin: 0%;
+	padding: 0px;
+	position: absolute;
+	top: 0%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	/*width: 80%;*/
+	height: 42px;
+	margin: auto;
+	
+}
+
+header div p {
+
+	margin: 0%;
+	padding: 0px;
+	color: white;
+	
+}
+
+header div#cabecera_parte2 {
+	
+	margin: 0%;
+	padding: 0px;
+	height: 50%;
+	position: relative;
+}
+
+header div#cabecera_parte2 img {
+
+	margin: 0%;
+	padding: 0px;
+	position: absolute;
+	top: 0%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	
+}
+
+/* configuracion general de cada sección */
+section {
+	margin: 1%;
+	padding: 0px;
+	background-color: #2C3E51;
+}
+
+/* titulo de cada seccion */
+div.titulo {
+	font-size: 32px;
+	text-align: center;	
+	height: 60px;
+	margin: 0%;
+	padding: 0px;
+	color: white;
+	/* alineamiento vertical div mediante Flexbox */
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+/* contenido de cada seccion */
+div.contenidoSeccion {
+	border: 0px solid black;
+	margin: 0%;
+	width: 100%;	
+}
+
+/* SECCION FOTOS */
+
+section#photos div.elementoSeccion {	
+	float: left;
+	min-width: 400px;
+	width: 32%;
+	height: 400px;
+	background-color: red;
+	border: 0px solid black;
+	margin: 0% 0% 1% 1%;
+}
+
+section#photos div.contenidoSeccion {
+	overflow: hidden;	
+}
+
+div.elementoSeccion img {
+	width: 100%; 
+	height: 100%; 
+}
+
+/* SECCION JOBS */
+
+section#jobs div.contenidoSeccion {
+	height: 450px; 
+	position: relative;
+}
+
+table#jobs_table {
+
+	border: 1%;
+	padding: 0%;
+	color: white;
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 80%;
+	height: 60%;
+	margin: auto;
+	/* centrado horizontal 
+	margin: 0% auto; */
+}
+
+/* SECCION MEALS */
+
+
+div.films {	
+	background-color: #2C3E51;
+	border: 0px solid black;
+	margin: 0% 1% 1% 1%;
+}
+
+/* SECCION FILMS */
+
+div.misfilms {	
+	
+	background-color: #2C3E51;
+	border: 0px solid black;
+	margin: 0%;
+
+}
+
+.foto {
+	width: 25%;
+	left: 50px;
+	height: 200px;
+	background-color: white;
+	border: 0px solid black;
+	display: inline-block;
+	position: absolute;
+	margin: 25px 25px 25px 25px;
+}
+
+.foto img {
+	width: 100%;
+	height: 100%;
+}
+
+.descripcion {
+	
+	width: 60%;
+	position: relative;
+	left: 425px;
+	height: 200px;
+	background-color: white;
+	display: inline-block;
+	margin: 25px 25px 25px 25px;
+	color: #2C3E51;
+}
